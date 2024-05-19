@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="tablinks" class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Timer')">TIMER</button>
+            <button class="tablinks" onclick="openTab(event, 'Stopwatch')">STOPWATCH</button>
+        </div>
+
+        <div id="Timer" class="tabcontent">
+            <div id="timer-display" contenteditable="true">0h 5m 00s</div>
+            <button id="start-timer" onclick="startTimer()">START</button>
+            <button id="stop-timer" onclick="stopTimer()">STOP</button>
+            <button id="reset-timer" onclick="resetTimer()">RESET</button>
+        </div>
+
+        <div id="Stopwatch" class="tabcontent">
+            <div id="stopwatch-display">0h 0m 00s</div>
+            <button id="start-stopwatch" onclick="startStopwatch()">START</button>
+            <button id="stop-stopwatch" onclick="stopStopwatch()">STOP</button>
+            <button id="reset-stopwatch" onclick="resetStopwatch()">RESET</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
